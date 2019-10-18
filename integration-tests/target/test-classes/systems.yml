@@ -1,0 +1,6 @@
+---
+erp:
+  default: "MOCK_SYSTEM"
+  systems:
+    - alias: "MOCK_SYSTEM"
+      uri: "http://mockserver-bold-panda.cfapps.eu10.hana.ondemand.com/"

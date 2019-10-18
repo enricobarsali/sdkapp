@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.sap.cloud.sdk.tutorial.sdkapp.BusinessPartnerServletTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.522 s <<< FAILURE! - in com.sap.cloud.sdk.tutorial.sdkapp.BusinessPartnerServletTest
+com.sap.cloud.sdk.tutorial.sdkapp.BusinessPartnerServletTest  Time elapsed: 16.522 s  <<< ERROR!
+com.sap.cloud.sdk.testutil.TestConfigurationError: 
+No credentials found for alias 'MOCK_SYSTEM'. Make sure to specify credentials in the Java system property 'test.credentials' or in src/test/resources/credentials.yml (alternatively: credentials.yaml, credentials.json): 
+
+Example (YAML, recommended for hand-written files):
+---
+credentials:
+
+- alias: "MOCK_SYSTEM"
+  username: "(username)"
+  password: "(password)"
+
+
+Example (JSON, recommended for generated files):
+{
+  "credentials": [
+    {
+      "alias": "MOCK_SYSTEM",
+      "username": "(username)",
+      "password": "(password)"
+    }
+  ]
+}
+
+	at com.sap.cloud.sdk.tutorial.sdkapp.BusinessPartnerServletTest.beforeClass(BusinessPartnerServletTest.java:39)
+
