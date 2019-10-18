@@ -1,0 +1,7 @@
+---
+applications:
+- name: mockserver
+  memory: 64M
+  buildpacks:
+  - nodejs_buildpack
+  random-route: true

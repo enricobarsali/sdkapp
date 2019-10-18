@@ -1,0 +1,20 @@
+---
+applications:
+
+- name: sdkapp
+  memory: 1024M
+  timeout: 300
+  random-route: true
+  path: application/target/sdkapp-application.war
+  buildpacks:
+    - sap_java_buildpack
+  env:
+    TARGET_RUNTIME: tomee7
+    SET_LOGGING_LEVEL: '{ROOT: INFO, com.sap.cloud.sdk: INFO}'
+    JBP_CONFIG_SAPJVM_MEMORY_SIZES: 'metaspace:128m..'
+    destinations: [{name: 'ErpQueryEndpoint', url: 'http://mockserver-bold-panda.cfapps.eu10.hana.ondemand.com'}]
+#  services:
+#  - my-application-logs
+#  - my-xsuaa
+#  - my-destination
+#  - my-connectivity
