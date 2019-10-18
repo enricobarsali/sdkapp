@@ -41,7 +41,13 @@
     </properties>
 
     <dependencies>
-        <dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>3.0.6</version>
+			<scope>test</scope>
+		</dependency>
+       <dependency>
             <groupId>com.sap.cloud.sdk.tutorial</groupId>
             <artifactId>sdkapp-application</artifactId>
             <classifier>classes</classifier>

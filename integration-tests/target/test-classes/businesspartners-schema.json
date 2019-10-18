@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Business Partner List",
+  "type": "array",
+  "items": {
+    "title": "Business Partner",
+    "type": "object",
+    "required": ["BusinessPartner", "LastName"]
+  },
+  "minItems": 1
+}

@@ -33,7 +33,12 @@ stages:
 #    credentials:
 #      - alias: 'mySystemAlias'
 #        credentialId: 'mySystemCredentialsId'
-
+### Stage-specific configuration
+#stages:
+  integrationTests:
+    credentials:
+      - alias: 'MOCK_SYSTEM'
+        credentialId: 'CredentialsId-Mock'
 #  s4SdkQualityChecks:
 #    nonErpDestinations:
 #      - 'myCustomDestination'
